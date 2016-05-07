@@ -5,9 +5,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="LightSwitch">
+    <meta name="description" content="Light Switch">
     <meta name="author" content="pchmelar">
-    <title>LightSwitch</title>
+    <title>Light Switch</title>
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <script src="js/jquery-1.12.3.min.js"></script>
     <script type="text/javascript">
@@ -16,7 +16,7 @@
         var light;
 
         // websocket
-        var ws = new WebSocket("ws://localhost:8888");
+        var ws = new WebSocket("ws://192.168.2.100:8888");
         ws.onmessage = function(event) {
             var obj = JSON.parse(event.data);
             light = obj.val;
@@ -38,7 +38,7 @@
             else light = false
             $.ajax({
                 type: "PUT",
-                url: "http://localhost:8080/light",
+                url: "http://192.168.2.100:8080/light",
                 contentType: "application/json",
                 data: JSON.stringify({
                     val: light
@@ -57,7 +57,7 @@
     <div class="outer">
         <div class="middle">
             <div class="inner">
-                <h1>LightSwitch</h1>
+                <h1>Light Switch</h1>
                 <img id="img" src="img/off.png">
                 <br>
                 <br>

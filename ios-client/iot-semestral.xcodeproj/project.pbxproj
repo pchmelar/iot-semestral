@@ -1,0 +1,586 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4515B9EB1CDDEC7500B76FAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4515B9EA1CDDEC7500B76FAE /* AppDelegate.swift */; };
+		4515B9ED1CDDEC7500B76FAE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4515B9EC1CDDEC7500B76FAE /* HomeViewController.swift */; };
+		4515BA001CDDEC7500B76FAE /* iot_semestralTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4515B9FF1CDDEC7500B76FAE /* iot_semestralTests.swift */; };
+		4515BA0B1CDDEC7500B76FAE /* iot_semestralUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4515BA0A1CDDEC7500B76FAE /* iot_semestralUITests.swift */; };
+		4515BA1C1CDE22CD00B76FAE /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 4515BA191CDE22CD00B76FAE /* bg.png */; };
+		4515BA1D1CDE22CD00B76FAE /* off.png in Resources */ = {isa = PBXBuildFile; fileRef = 4515BA1A1CDE22CD00B76FAE /* off.png */; };
+		4515BA1E1CDE22CD00B76FAE /* on.png in Resources */ = {isa = PBXBuildFile; fileRef = 4515BA1B1CDE22CD00B76FAE /* on.png */; };
+		4515BA201CDE23BD00B76FAE /* LightSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4515BA1F1CDE23BD00B76FAE /* LightSocket.swift */; };
+		4515BA221CDE873900B76FAE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4515BA211CDE873900B76FAE /* Images.xcassets */; };
+		9F01B25FAF6FEEAA15432B3C /* Pods_iot_semestral.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E46E45D589C784C7885B4DB /* Pods_iot_semestral.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4515B9FC1CDDEC7500B76FAE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4515B9DF1CDDEC7400B76FAE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4515B9E61CDDEC7400B76FAE;
+			remoteInfo = "iot-semestral";
+		};
+		4515BA071CDDEC7500B76FAE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4515B9DF1CDDEC7400B76FAE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4515B9E61CDDEC7400B76FAE;
+			remoteInfo = "iot-semestral";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1E46E45D589C784C7885B4DB /* Pods_iot_semestral.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iot_semestral.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2696FF1CBF30D09C4F870402 /* Pods-iot-semestral.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iot-semestral.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iot-semestral/Pods-iot-semestral.debug.xcconfig"; sourceTree = "<group>"; };
+		4515B9E71CDDEC7400B76FAE /* LightSwitch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LightSwitch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4515B9EA1CDDEC7500B76FAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4515B9EC1CDDEC7500B76FAE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		4515B9F61CDDEC7500B76FAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4515B9FB1CDDEC7500B76FAE /* iot-semestralTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iot-semestralTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4515B9FF1CDDEC7500B76FAE /* iot_semestralTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iot_semestralTests.swift; sourceTree = "<group>"; };
+		4515BA011CDDEC7500B76FAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4515BA061CDDEC7500B76FAE /* iot-semestralUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iot-semestralUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4515BA0A1CDDEC7500B76FAE /* iot_semestralUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iot_semestralUITests.swift; sourceTree = "<group>"; };
+		4515BA0C1CDDEC7500B76FAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4515BA191CDE22CD00B76FAE /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bg.png; path = Resources/bg.png; sourceTree = SOURCE_ROOT; };
+		4515BA1A1CDE22CD00B76FAE /* off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = off.png; path = Resources/off.png; sourceTree = SOURCE_ROOT; };
+		4515BA1B1CDE22CD00B76FAE /* on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = on.png; path = Resources/on.png; sourceTree = SOURCE_ROOT; };
+		4515BA1F1CDE23BD00B76FAE /* LightSocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LightSocket.swift; sourceTree = "<group>"; };
+		4515BA211CDE873900B76FAE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E04EEA51626192CAA3137E5F /* Pods-iot-semestral.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iot-semestral.release.xcconfig"; path = "Pods/Target Support Files/Pods-iot-semestral/Pods-iot-semestral.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4515B9E41CDDEC7400B76FAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F01B25FAF6FEEAA15432B3C /* Pods_iot_semestral.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4515B9F81CDDEC7500B76FAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4515BA031CDDEC7500B76FAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4515B9DE1CDDEC7400B76FAE = {
+			isa = PBXGroup;
+			children = (
+				4515B9E91CDDEC7500B76FAE /* iot-semestral */,
+				4515B9FE1CDDEC7500B76FAE /* iot-semestralTests */,
+				4515BA091CDDEC7500B76FAE /* iot-semestralUITests */,
+				4515B9E81CDDEC7400B76FAE /* Products */,
+				9FD86C316DAE7BB6919037D4 /* Pods */,
+				9465501DEFD38ADDF56B45FA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4515B9E81CDDEC7400B76FAE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4515B9E71CDDEC7400B76FAE /* LightSwitch.app */,
+				4515B9FB1CDDEC7500B76FAE /* iot-semestralTests.xctest */,
+				4515BA061CDDEC7500B76FAE /* iot-semestralUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4515B9E91CDDEC7500B76FAE /* iot-semestral */ = {
+			isa = PBXGroup;
+			children = (
+				4515BA181CDE22C100B76FAE /* Resources */,
+				4515B9EA1CDDEC7500B76FAE /* AppDelegate.swift */,
+				4515B9EC1CDDEC7500B76FAE /* HomeViewController.swift */,
+				4515BA1F1CDE23BD00B76FAE /* LightSocket.swift */,
+				4515BA211CDE873900B76FAE /* Images.xcassets */,
+				4515B9F61CDDEC7500B76FAE /* Info.plist */,
+			);
+			path = "iot-semestral";
+			sourceTree = "<group>";
+		};
+		4515B9FE1CDDEC7500B76FAE /* iot-semestralTests */ = {
+			isa = PBXGroup;
+			children = (
+				4515B9FF1CDDEC7500B76FAE /* iot_semestralTests.swift */,
+				4515BA011CDDEC7500B76FAE /* Info.plist */,
+			);
+			path = "iot-semestralTests";
+			sourceTree = "<group>";
+		};
+		4515BA091CDDEC7500B76FAE /* iot-semestralUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4515BA0A1CDDEC7500B76FAE /* iot_semestralUITests.swift */,
+				4515BA0C1CDDEC7500B76FAE /* Info.plist */,
+			);
+			path = "iot-semestralUITests";
+			sourceTree = "<group>";
+		};
+		4515BA181CDE22C100B76FAE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4515BA191CDE22CD00B76FAE /* bg.png */,
+				4515BA1A1CDE22CD00B76FAE /* off.png */,
+				4515BA1B1CDE22CD00B76FAE /* on.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		9465501DEFD38ADDF56B45FA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1E46E45D589C784C7885B4DB /* Pods_iot_semestral.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9FD86C316DAE7BB6919037D4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2696FF1CBF30D09C4F870402 /* Pods-iot-semestral.debug.xcconfig */,
+				E04EEA51626192CAA3137E5F /* Pods-iot-semestral.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4515B9E61CDDEC7400B76FAE /* iot-semestral */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4515BA0F1CDDEC7500B76FAE /* Build configuration list for PBXNativeTarget "iot-semestral" */;
+			buildPhases = (
+				4638CF4F1C994E75DE4ABE58 /* 📦 Check Pods Manifest.lock */,
+				4515B9E31CDDEC7400B76FAE /* Sources */,
+				4515B9E41CDDEC7400B76FAE /* Frameworks */,
+				4515B9E51CDDEC7400B76FAE /* Resources */,
+				1E36D406B571DB910BF92726 /* 📦 Embed Pods Frameworks */,
+				266CE390A581CF7C351C2B7F /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "iot-semestral";
+			productName = "iot-semestral";
+			productReference = 4515B9E71CDDEC7400B76FAE /* LightSwitch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4515B9FA1CDDEC7500B76FAE /* iot-semestralTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4515BA121CDDEC7500B76FAE /* Build configuration list for PBXNativeTarget "iot-semestralTests" */;
+			buildPhases = (
+				4515B9F71CDDEC7500B76FAE /* Sources */,
+				4515B9F81CDDEC7500B76FAE /* Frameworks */,
+				4515B9F91CDDEC7500B76FAE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4515B9FD1CDDEC7500B76FAE /* PBXTargetDependency */,
+			);
+			name = "iot-semestralTests";
+			productName = "iot-semestralTests";
+			productReference = 4515B9FB1CDDEC7500B76FAE /* iot-semestralTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4515BA051CDDEC7500B76FAE /* iot-semestralUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4515BA151CDDEC7500B76FAE /* Build configuration list for PBXNativeTarget "iot-semestralUITests" */;
+			buildPhases = (
+				4515BA021CDDEC7500B76FAE /* Sources */,
+				4515BA031CDDEC7500B76FAE /* Frameworks */,
+				4515BA041CDDEC7500B76FAE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4515BA081CDDEC7500B76FAE /* PBXTargetDependency */,
+			);
+			name = "iot-semestralUITests";
+			productName = "iot-semestralUITests";
+			productReference = 4515BA061CDDEC7500B76FAE /* iot-semestralUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4515B9DF1CDDEC7400B76FAE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = pchmelar;
+				TargetAttributes = {
+					4515B9E61CDDEC7400B76FAE = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					4515B9FA1CDDEC7500B76FAE = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 4515B9E61CDDEC7400B76FAE;
+					};
+					4515BA051CDDEC7500B76FAE = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 4515B9E61CDDEC7400B76FAE;
+					};
+				};
+			};
+			buildConfigurationList = 4515B9E21CDDEC7400B76FAE /* Build configuration list for PBXProject "iot-semestral" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4515B9DE1CDDEC7400B76FAE;
+			productRefGroup = 4515B9E81CDDEC7400B76FAE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4515B9E61CDDEC7400B76FAE /* iot-semestral */,
+				4515B9FA1CDDEC7500B76FAE /* iot-semestralTests */,
+				4515BA051CDDEC7500B76FAE /* iot-semestralUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4515B9E51CDDEC7400B76FAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4515BA1D1CDE22CD00B76FAE /* off.png in Resources */,
+				4515BA221CDE873900B76FAE /* Images.xcassets in Resources */,
+				4515BA1E1CDE22CD00B76FAE /* on.png in Resources */,
+				4515BA1C1CDE22CD00B76FAE /* bg.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4515B9F91CDDEC7500B76FAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4515BA041CDDEC7500B76FAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1E36D406B571DB910BF92726 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iot-semestral/Pods-iot-semestral-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		266CE390A581CF7C351C2B7F /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iot-semestral/Pods-iot-semestral-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4638CF4F1C994E75DE4ABE58 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4515B9E31CDDEC7400B76FAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4515B9ED1CDDEC7500B76FAE /* HomeViewController.swift in Sources */,
+				4515B9EB1CDDEC7500B76FAE /* AppDelegate.swift in Sources */,
+				4515BA201CDE23BD00B76FAE /* LightSocket.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4515B9F71CDDEC7500B76FAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4515BA001CDDEC7500B76FAE /* iot_semestralTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4515BA021CDDEC7500B76FAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4515BA0B1CDDEC7500B76FAE /* iot_semestralUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4515B9FD1CDDEC7500B76FAE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4515B9E61CDDEC7400B76FAE /* iot-semestral */;
+			targetProxy = 4515B9FC1CDDEC7500B76FAE /* PBXContainerItemProxy */;
+		};
+		4515BA081CDDEC7500B76FAE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4515B9E61CDDEC7400B76FAE /* iot-semestral */;
+			targetProxy = 4515BA071CDDEC7500B76FAE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4515BA0D1CDDEC7500B76FAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4515BA0E1CDDEC7500B76FAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4515BA101CDDEC7500B76FAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2696FF1CBF30D09C4F870402 /* Pods-iot-semestral.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = "iot-semestral/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "targetmd.iot-semestral";
+				PRODUCT_NAME = LightSwitch;
+			};
+			name = Debug;
+		};
+		4515BA111CDDEC7500B76FAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E04EEA51626192CAA3137E5F /* Pods-iot-semestral.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = "iot-semestral/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "targetmd.iot-semestral";
+				PRODUCT_NAME = LightSwitch;
+			};
+			name = Release;
+		};
+		4515BA131CDDEC7500B76FAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "iot-semestralTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "targetmd.iot-semestralTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iot-semestral.app/iot-semestral";
+			};
+			name = Debug;
+		};
+		4515BA141CDDEC7500B76FAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "iot-semestralTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "targetmd.iot-semestralTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iot-semestral.app/iot-semestral";
+			};
+			name = Release;
+		};
+		4515BA161CDDEC7500B76FAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "iot-semestralUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "targetmd.iot-semestralUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "iot-semestral";
+			};
+			name = Debug;
+		};
+		4515BA171CDDEC7500B76FAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "iot-semestralUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "targetmd.iot-semestralUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "iot-semestral";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4515B9E21CDDEC7400B76FAE /* Build configuration list for PBXProject "iot-semestral" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4515BA0D1CDDEC7500B76FAE /* Debug */,
+				4515BA0E1CDDEC7500B76FAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4515BA0F1CDDEC7500B76FAE /* Build configuration list for PBXNativeTarget "iot-semestral" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4515BA101CDDEC7500B76FAE /* Debug */,
+				4515BA111CDDEC7500B76FAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4515BA121CDDEC7500B76FAE /* Build configuration list for PBXNativeTarget "iot-semestralTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4515BA131CDDEC7500B76FAE /* Debug */,
+				4515BA141CDDEC7500B76FAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4515BA151CDDEC7500B76FAE /* Build configuration list for PBXNativeTarget "iot-semestralUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4515BA161CDDEC7500B76FAE /* Debug */,
+				4515BA171CDDEC7500B76FAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4515B9DF1CDDEC7400B76FAE /* Project object */;
+}
