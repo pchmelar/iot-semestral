@@ -44,7 +44,7 @@ http.createServer(function(req, res) {
     } 
 
     else if (req.url.match("^/light") && req.method == "PUT") {
-        
+
         var body = '';
 
         req.on('data', function(data) {
