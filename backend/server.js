@@ -4,6 +4,30 @@ var light = {
     val: false
 };
 
+// ----------------------------------------------------------------
+
+var WebSocketServer = require('ws').Server
+var wss = new WebSocketServer({ port: 8888 });
+
+wss.broadcast = function(data) {
+  for (var i in this.clients) this.clients[i].send(data);
+};
+
+wss.on('connection', function connection(ws) {
+
+    ws.send(JSON.stringify(light));
+
+    ws.on('message', function incoming(message) {
+        if (message == "true") light.val = true;
+        else if (message == "false") light.val = false;
+
+        wss.broadcast(JSON.stringify(light));
+    });
+
+});
+
+// ----------------------------------------------------------------
+
 http.createServer(function(req, res) {
 
     if (req.url.match("^/light") && req.method == "GET") {
@@ -29,6 +53,7 @@ http.createServer(function(req, res) {
                 'Content-Type': 'application/json'
             });
             res.end();
+            wss.broadcast(JSON.stringify(light));
             console.log('Lights ' + (light.val == true ? 'on' : 'off'));
         });
     } 
@@ -41,3 +66,5 @@ http.createServer(function(req, res) {
     }
 
 }).listen(8080)
+
+// ----------------------------------------------------------------
