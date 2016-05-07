@@ -4,6 +4,14 @@ var light = {
     val: false
 };
 
+// CORS headers
+var headers = {};
+headers["Access-Control-Allow-Origin"] = "*";
+headers["Access-Control-Allow-Methods"] = "POST, GET, PUT, DELETE, OPTIONS";
+headers["Access-Control-Allow-Credentials"] = true;
+headers["Access-Control-Max-Age"] = '86400'; // 24 hours
+headers["Access-Control-Allow-Headers"] = "X-Requested-With, Access-Control-Allow-Origin, X-HTTP-Method-Override, Content-Type, Authorization, Accept";
+
 // ----------------------------------------------------------------
 
 var WebSocketServer = require('ws').Server
@@ -31,14 +39,12 @@ wss.on('connection', function connection(ws) {
 http.createServer(function(req, res) {
 
     if (req.url.match("^/light") && req.method == "GET") {
-        res.writeHead(200, {
-            'Content-Type': 'application/json'
-        });
+        res.writeHead(200, headers);
         res.end(JSON.stringify(light));
     } 
 
     else if (req.url.match("^/light") && req.method == "PUT") {
-
+        
         var body = '';
 
         req.on('data', function(data) {
@@ -49,9 +55,7 @@ http.createServer(function(req, res) {
         req.on('end', function() {
             var obj = JSON.parse(body);
             light.val = obj.val;
-            res.writeHead(201, {
-                'Content-Type': 'application/json'
-            });
+            res.writeHead(201, headers);
             res.end();
             wss.broadcast(JSON.stringify(light));
             console.log('Lights ' + (light.val == true ? 'on' : 'off'));
@@ -59,9 +63,7 @@ http.createServer(function(req, res) {
     } 
 
     else {
-        res.writeHead(200, {
-            'Content-Type': 'text/plain'
-        });
+        res.writeHead(200, headers);
         res.end('MI-IOT semestral project');
     }
 

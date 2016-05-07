@@ -1,0 +1,28 @@
+{
+  "name": "iot-semestral",
+  "version": "1.0.0",
+  "description": "Raspberry Pi light switch",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pchmelar/iot-semestral.git"
+  },
+  "keywords": [
+    "nodejs",
+    "iot",
+    "lightswitch"
+  ],
+  "author": "pchmelar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pchmelar/iot-semestral/issues"
+  },
+  "homepage": "https://github.com/pchmelar/iot-semestral#readme",
+  "dependencies": {
+    "ws": "^1.1.0"
+  }
+}

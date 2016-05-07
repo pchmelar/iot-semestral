@@ -1,0 +1,49 @@
+html {}
+
+body {}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.button {
+    border-radius: 25px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    outline:none;
+}
+
+.outer {
+    display: table;
+    position: absolute;
+    height: 99%;
+    width: 99%;
+}
+
+.middle {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.inner {
+    margin-left: auto;
+    margin-right: auto; 
+    width: 400px;
+    height: 500px;
+    text-align: center;
+}
