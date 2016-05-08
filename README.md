@@ -26,9 +26,9 @@ Status codes: 200 - ok, 400 - bad request
 
 PUT /light - update light state  
 Status codes: 200 - ok, 400 - bad request  
-Inform all clients about the change via WebSockets broadcast
+Inform all clients about the change via WebSocket broadcast
 
-### WebSockets server (port 8888)
+### WebSocket server (port 8888)
 
 WebSocketServer.on('connection')  
 Action: send actual light state (true/false) 
@@ -46,7 +46,7 @@ Action: update light state and inform all clients via broadcast
 
 ### Usage
 
-- Change HTTP API and WebSockets server URLs in client.html to an IP of your Raspberry
+- Change HTTP API and WebSocket server URLs in client.html to an IP of your Raspberry
 - Open client.html in your browser
 
 ### Screenshots
@@ -60,8 +60,8 @@ Action: update light state and inform all clients via broadcast
 
 - `cd ios-client`
 - `pod install`
-- Change HTTP API and WebSockets server URLs in HomeViewController.swift to an IP of your Raspberry
 - Open iot-semestral.xcworkspace in XCode
+- Change HTTP API and WebSocket server URLs in HomeViewController.swift to an IP of your Raspberry
 - Run the application on your iOS device (Apple Developer Program membership required)
 
 ### Screenshots
