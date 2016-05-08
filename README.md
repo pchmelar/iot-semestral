@@ -38,7 +38,7 @@ Action: update light state and inform all clients via broadcast
 
 ### Usage
 
-- `cd scripts`
+- `cd backend`
 - `npm install`
 - `node server.js`
 
@@ -46,7 +46,7 @@ Action: update light state and inform all clients via broadcast
 
 ### Usage
 
-- Change HTTP API and WebSockets server URLs in client.html to IP of your Raspberry
+- Change HTTP API and WebSockets server URLs in client.html to an IP of your Raspberry
 - Open client.html in your browser
 
 ### Screenshots
@@ -60,9 +60,9 @@ Action: update light state and inform all clients via broadcast
 
 - `cd ios-client`
 - `pod install`
-- Change HTTP API and WebSockets server URLs in HomeViewController.swift to IP of your Raspberry
+- Change HTTP API and WebSockets server URLs in HomeViewController.swift to an IP of your Raspberry
 - Open iot-semestral.xcworkspace in XCode
-- Run application on your iOS device (Apple Developer Program membership required)
+- Run the application on your iOS device (Apple Developer Program membership required)
 
 ### Screenshots
 
