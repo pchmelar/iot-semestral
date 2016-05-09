@@ -1,7 +1,9 @@
 var http = require('http');
 var WebSocketServer = require('ws').Server;
+
 var Gpio = require('onoff').Gpio;
 var led = new Gpio(14, 'out');
+led.writeSync(0);
 
 var light = {
     val: false
