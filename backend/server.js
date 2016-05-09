@@ -32,8 +32,10 @@ wss.on('connection', function connection(ws) {
     ws.on('message', function incoming(message) {
         if (message == "true") light.val = true;
         else if (message == "false") light.val = false;
-
         wss.broadcast(JSON.stringify(light));
+
+        console.log('Lights ' + (light.val == true ? 'on' : 'off'));
+        led.writeSync(light.val == true ? 1 : 0);
     });
 
 });
