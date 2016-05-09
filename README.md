@@ -26,7 +26,7 @@ Status codes: 200 - ok, 400 - bad request
 
 PUT /light - update light state  
 Status codes: 200 - ok, 400 - bad request  
-Inform all clients about the change via WebSocket broadcast
+Inform all clients about the change via WebSocket broadcast  
 Turn on/off GPIO pin 14
 
 ### WebSocket server (port 8888)
@@ -35,7 +35,7 @@ WebSocketServer.on('connection')
 Action: send actual light state (true/false) 
 
 WebSocket.on('message') == "true"/"false"  
-Action: update light state and inform all clients via broadcast
+Action: update light state and inform all clients via broadcast  
 Turn on/off GPIO pin 14
 
 ### Usage
