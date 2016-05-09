@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/pchmelar/iot-semestral#readme",
   "dependencies": {
-    "rpi-gpio": "^0.7.0",
+    "onoff": "^1.1.0",
     "ws": "^1.1.0"
   }
 }
