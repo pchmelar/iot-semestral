@@ -1,4 +1,7 @@
-var http = require("http");
+var http = require('http');
+var WebSocketServer = require('ws').Server;
+var Gpio = require('onoff').Gpio;
+var led = new Gpio(14, 'out');
 
 var light = {
     val: false
@@ -14,7 +17,6 @@ headers["Access-Control-Allow-Headers"] = "X-Requested-With, Access-Control-Allo
 
 // ----------------------------------------------------------------
 
-var WebSocketServer = require('ws').Server
 var wss = new WebSocketServer({ port: 8888 });
 
 wss.broadcast = function(data) {
@@ -58,7 +60,9 @@ http.createServer(function(req, res) {
             res.writeHead(201, headers);
             res.end();
             wss.broadcast(JSON.stringify(light));
+
             console.log('Lights ' + (light.val == true ? 'on' : 'off'));
+            led.writeSync(light.val == true ? 1 : 0);
         });
     } 
 
